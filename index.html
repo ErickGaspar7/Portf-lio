@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal - Erick Gaspar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(90deg, #4CAF50, #008CBA);
+            color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        section h2 {
+            margin-bottom: 20px;
+        }
+
+        #sobre {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        #sobre p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        #gosto {
+            font-weight: bold;
+            font-size: 1.2rem;
+            animation: destaque 1.5s infinite alternate;
+        }
+
+        @keyframes destaque {
+            0% { color: #333; }
+            100% { color: #4CAF50; }
+        }
+
+        #projetos ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        #projetos ul li {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #projetos ul li h3 {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Erick Gaspar</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <div class="container">
+                <h2>Sobre Mim</h2>
+                <p id="gosto">Software | Web | Games</p>
+                <p>Sou apaixonado por tecnologia e tenho experiência como estoquista e estagiário técnico em TI na prefeitura. Possuo habilidades em redes de computadores, programação e desenvolvimento de soluções práticas e criativas.</p>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <div class="container">
+                <h2>Projetos</h2>
+                <ul>
+                    <li>
+                        <h3>Open Web</h3>
+                        <p>Uma aplicação web inovadora para facilitar o acesso à informação.</p>
+                        <a href="https://drive.google.com/file/d/1b0G3TRtmJ6HXHUxx_BatdCIAZrsM_DU3/view?usp=sharing" target="_blank">Baixar Instalador</a>
+                    </li>
+                    <li>
+                        <h3>Open Finance</h3>
+                        <p>Solução inteligente para controle financeiro pessoal.</p>
+                    </li>
+                    <li>
+                        <h3>Player de Música</h3>
+                        <p>Player interativo com organização por álbuns e músicas, desenvolvido com Python e Tkinter.</p>
+                    </li>
+                    <li>
+                        <h3>Mapas Interativos</h3>
+                        <p>Projeto que utiliza Folium e Tkinter para exibir mapas com informações dinâmicas.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container">
+                <h2>Contato</h2>
+                <p>Email: <a href="mailto:erick.derik456@gmail.com">erick.derik456@gmail.com</a></p>
+                <p>Telefone: <a href="tel:+5551898612109">(51) 9 8961-2109</a></p>
+                <p>LinkedIn: <a href="#">linkedin.com/in/seuperfil</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Erick Gaspar. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
